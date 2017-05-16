@@ -1,0 +1,83 @@
+.header_picture{
+    width: 100%;
+    display: block;
+    margin-top: -30%;
+}
+.header_title{
+    background-color: #385623;
+    height: 35px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    font-family: arial;
+}
+.profil_picture{
+    border-radius: 50%;
+    width: 120px;
+    border: 2px solid #385623;
+    display: block;
+    margin: 5vh auto;
+}
+form{
+    text-align: center;
+    padding-bottom: 50px;
+}
+input{
+    border: 1px solid #385623;
+}
+ul{
+    text-align: left;
+    list-style-type:none;
+    font-family: arial;
+}
+textarea{
+    border: 1px solid #385623;
+    font-family: arial;
+    color: black;
+    font-size: 12px;
+}
+p{
+    color: black;
+    font-family: arial;
+}
+.nav{
+    background-color: white;
+    border-top: 2px solid #385623;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
+    padding-top: 3px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_img{
+    height: 25px;
+}
+.nav_img_profil{
+    border-radius: 50%;
+    border: 1px solid #385623;
+}
+.profil_container{
+    display: flex;
+    justify-content: center;
+}
+.div_nickname{
+    background-color: white;
+    width: 120px;
+    margin: -50px auto;
+    text-align: center;
+    border-radius: 50%;
+}
+.left_profil{
+    display: flex;
+    flex-direction: column;
+}
+.connect{
+    background-color: #385623;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+}

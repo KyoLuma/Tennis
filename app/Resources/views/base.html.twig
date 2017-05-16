@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Tennis{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('bundles/tennis/css/stylesheet.css') }}" type="text/css" media="all" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('http://image.noelshack.com/fichiers/2017/19/1494581744-favicon-1.png') }}" />
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+        <div class="nav">
+            <img src="{{ asset('http://image.noelshack.com/fichiers/2017/19/1494584855-corgi.jpg') }}" alt="" class="nav_img nav_img_profil">
+            <img src="{{ asset('https://img.clipartfest.com/6beace6f73e2384c74ea54e24cdf7f5a_lady-cougar-tennis-team-tennis-team-logo-clipart_600-494.png') }}" alt="" class="nav_img">
+            <img src="{{ asset('http://www.freeiconspng.com/uploads/contacts-icon--26.png') }}" alt="" class="nav_img">
+            <img src="{{ asset('https://cdn4.iconfinder.com/data/icons/ios7-essence/22/other_review_comment__-512.png') }}" alt="" class="nav_img">
+        </div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

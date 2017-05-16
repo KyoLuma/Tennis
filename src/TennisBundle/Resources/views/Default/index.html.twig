@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <html>
+        <body>
+        <img src="{{ asset('http://fr.cdn.v5.futura-sciences.com/buildsv6/images/largeoriginal/5/5/0/5506733732_85315_physique-balles-tennis.jpg') }}" alt="" class="header_picture">
+        <div class="header_title">General Profile</div>
+        <img src="{{ asset('http://image.noelshack.com/fichiers/2017/19/1494584855-corgi.jpg') }}" alt="" class="profil_picture">
+        <form>
+
+        <p>
+            <label>Name</label> : <br><input type="text" name="pseudo" />
+        </p>
+        <p>
+            <label>Date of birth</label> : <br><input type="date" name="date" />
+        </p>
+            <p>Gender</p>
+            <p>
+            <input type="radio" name="civi" value="Female" /> Female
+            <input type="radio" name="civi" value="Male" /> Male
+        </p>
+        </form>
+        </body>
+    </html>
+{% endblock %}

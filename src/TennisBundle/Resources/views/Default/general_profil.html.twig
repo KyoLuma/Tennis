@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <html>
+        <body>
+        <img src="{{ asset('http://fr.cdn.v5.futura-sciences.com/buildsv6/images/largeoriginal/5/5/0/5506733732_85315_physique-balles-tennis.jpg') }}" alt="" class="header_picture">
+        <div class="header_title">Tennis Profile</div>
+        <form action="">
+            <p>Level :</p>
+            <ul>
+                <li><input type="radio" name="civi" value="Male" /> Beginner</li>
+                <li><input type="radio" name="civi" value="Male" /> Amateur</li>
+                <li><input type="radio" name="civi" value="Male" /> Intermediate</li>
+                <li><input type="radio" name="civi" value="Male" /> Advanced</li>
+                <li><input type="radio" name="civi" value="Male" /> Expert</li>
+            </ul>
+            <p><label>Zip code to prerably play in</label> : <br><input type="text" name="pseudo" /></p>
+            <p><label>Phone Number</label> : <br><input type="text" name="pseudo" /></p>
+            <p>Avaibility :</p>
+            <p>
+                <input type="radio" name="civi" value="Male" /> Always
+                <input type="radio" name="civi" value="Male" /> Specific
+            </p>
+            <p>
+                <select name="pays" id="pays">
+                    <option value="monday">Monday</option>
+                    <option value="thuesday">Thuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                </select>
+                <select name="pays" id="pays">
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                    <option value="all_day">All day</option>
+                </select>
+                <p><label for="message">Description :</label><br>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea></p>
+                <p><label>Favorite tennis player</label> :<br> <input type="text" name="tennis_player" /></p>
+
+        </form>
+        </body>
+    </html>
+{%  endblock %}
