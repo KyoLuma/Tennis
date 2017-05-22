@@ -11,12 +11,16 @@
     <body>
         {% block body %}
         {% endblock %}
+        {% block nav %}
         <div class="nav">
-            <img src="{{ asset('http://image.noelshack.com/fichiers/2017/19/1494584855-corgi.jpg') }}" alt="" class="nav_img nav_img_profil">
-            <img src="{{ asset('https://img.clipartfest.com/6beace6f73e2384c74ea54e24cdf7f5a_lady-cougar-tennis-team-tennis-team-logo-clipart_600-494.png') }}" alt="" class="nav_img">
+            <a href="{{ path('kjj') }}"><img src="{{ asset('http://image.noelshack.com/fichiers/2017/19/1494584855-corgi.jpg') }}" alt="" class="nav_img nav_img_profil">
+            </a>
+            <a href="{{ path('matches') }}"><img src="{{ asset('https://img.clipartfest.com/6beace6f73e2384c74ea54e24cdf7f5a_lady-cougar-tennis-team-tennis-team-logo-clipart_600-494.png') }}" alt="" class="nav_img">
+            </a>
             <img src="{{ asset('http://www.freeiconspng.com/uploads/contacts-icon--26.png') }}" alt="" class="nav_img">
             <img src="{{ asset('https://cdn4.iconfinder.com/data/icons/ios7-essence/22/other_review_comment__-512.png') }}" alt="" class="nav_img">
         </div>
+        {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>

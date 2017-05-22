@@ -4,18 +4,19 @@
         <body>
             <img src="{{ asset('http://fr.cdn.v5.futura-sciences.com/buildsv6/images/largeoriginal/5/5/0/5506733732_85315_physique-balles-tennis.jpg') }}" alt="" class="header_picture">
             <div class="header_title">Matches</div>
+            {% for i in 0..3 %}
             <div class="profil_container">
             <div class="left_profil">
             <img src="{{ asset('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLnaQKwp-yNYmsZ4pfL8wxg7Fz07NjRnHrK715H8g8qcwIzr8QEA') }}" alt="" class="profil_picture">
-            <div class="div_nickname"><p>Cherrios</p></div>
+                <div class="div_nickname"><p>Cherrios</p></div>
             </div>
-            <div class="right_profil"><p><b>Location :</b> Fontainebleau</p>
-                <p><b>Level :</b> Expert</p>
-                <p><b>Rating :</b> 4,7</p>
-                <div class="connect"><p>Connect</p></div>
-            </div>
-
-            </div>
+                <div class="right_profil"><p><b>Location :</b> Fontainebleau</p>
+                    <p><b>Level :</b> Expert</p>
+                    <p><b>Rating :</b> 4,7</p>
+                    <div class="connect"><p>Connect</p></div>
+                </div>
+            </div><br>
+            {% endfor %}
         </body>
     </html>
 {% endblock %}
