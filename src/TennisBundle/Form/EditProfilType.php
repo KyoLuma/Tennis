@@ -13,7 +13,14 @@ class EditProfilType extends AbstractType
         $builder
             ->add('first_name')
             ->add('last_name')
-            ->add('profile_picture');
+            ->add('gender')
+            ->add('phone_number')
+            ->add('profile_picture')
+            ->add('town')
+            ->add('zip_code')
+            ->add('description')
+            ->add('favorite_player')
+        ;
     }
 
     public function getParent()

@@ -13,7 +13,14 @@
     <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
     <p>{{ 'First Name' }}: {{ app.user.FirstName }} </p>
     <p>{{ 'Last Name' }}: {{ app.user.LastName }} </p>
-</div>
+    <p>{{ 'Gender' }}: {{ app.user.Gender }} </p>
+    <p>{{ 'Phone Number' }}: {{ app.user.PhoneNumber }} </p>
+    <p>{{ 'Your town' }}: {{ app.user.Town }} </p>
+    <p>{{ 'Zip code' }}: {{ app.user.ZipCode }} </p>
+    <p>{{ 'Description' }}: {{ app.user.Description }} </p>
+    <p>{{ 'Favorite tennis player' }}: {{ app.user.FavoritePlayer }} </p>
+    <p>{{ 'Rating' }}: {{ app.user.Rating }} </p>
+    </div>
 <p><a href="{{ path('fos_user_profile_edit') }}">Edit Profile</a></p>
     <br><br><br>
 {% endblock body %}

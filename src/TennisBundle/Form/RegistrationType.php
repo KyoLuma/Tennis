@@ -13,7 +13,7 @@ class RegistrationType extends AbstractType
         $builder
             ->add('first_name')
             ->add('last_name')
-            ->add('profile_picture');
+        ;
     }
 
     public function getParent()
