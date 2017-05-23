@@ -1,4 +1,12 @@
 {% trans_default_domain 'FOSUserBundle' %}
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<div>
+    <img src="{{ asset('http://image.noelshack.com/fichiers/2017/21/1495538923-tennis-racket-2259356-1920.jpg') }}" alt="" class="header_picture">
+    <div class="header_title">Registration</div>
+</div><br>
+
 
 {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
     {{ form_widget(form) }}
@@ -6,3 +14,4 @@
         <input type="submit" value="{{ 'profile.edit.submit'|trans }}" />
     </div>
 {{ form_end(form) }}
+{% endblock body %}

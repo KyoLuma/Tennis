@@ -1,7 +1,15 @@
 {% extends "@FOSUser/layout.html.twig" %}
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<div>
+    <img src="{{ asset('http://image.noelshack.com/fichiers/2017/21/1495538923-tennis-racket-2259356-1920.jpg') }}" alt="" class="header_picture">
+    <div class="header_title">Registration</div>
+</div><br>
 
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block fos_user_content %}
     <p>{{ 'registration.check_email'|trans({'%email%': user.email}) }}</p>
 {% endblock fos_user_content %}
+{% endblock body %}

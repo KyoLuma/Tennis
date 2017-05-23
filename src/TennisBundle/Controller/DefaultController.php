@@ -4,6 +4,7 @@ namespace TennisBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use TennisBundle\Entity\User;
 
 class DefaultController extends Controller
 {

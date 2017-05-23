@@ -1,8 +1,18 @@
 {% trans_default_domain 'FOSUserBundle' %}
+{% extends 'base.html.twig' %}
 
-{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+{% block body %}
+
+    <div>
+        <img src="{{ asset('http://image.noelshack.com/fichiers/2017/21/1495538923-tennis-racket-2259356-1920.jpg') }}" alt="" class="header_picture">
+        <div class="header_title">Registration</div>
+    </div><br>
+
+{{ form_start (form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+
     {{ form_widget(form) }}
     <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+        <br> <input type="submit" value="{{ 'registration.submit'|trans }}" />
     </div>
-{{ form_end(form) }}
+    {{ form_end(form) }}
+{% endblock body %}

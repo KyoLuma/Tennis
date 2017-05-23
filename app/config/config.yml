@@ -78,3 +78,6 @@ fos_user:
     from_email:
         address: "azerty"
         sender_name: "azerty"
+    registration:
+        form:
+            type: TennisBundle\Form\RegistrationType

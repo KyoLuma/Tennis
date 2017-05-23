@@ -1,6 +1,19 @@
 {% trans_default_domain 'FOSUserBundle' %}
+{% extends 'base.html.twig' %}
 
-<div class="fos_user_user_show">
+{% block body %}
+
+    <div>
+        <img src="{{ asset('http://image.noelshack.com/fichiers/2017/21/1495538923-tennis-racket-2259356-1920.jpg') }}" alt="" class="header_picture">
+        <div class="header_title">Profile</div>
+    </div>
+    <div class="fos_user_user_show">
     <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
     <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+    <p>{{ 'First Name' }}: {{ app.user.FirstName }} </p>
+    <p>{{ 'Last Name' }}: {{ app.user.LastName }} </p>
+    <img src="{{ app.user.ProfilePicture }}" alt="" class="profil_picture">
 </div>
+<p><a href="{{ path('fos_user_profile_edit') }}">Edit Profile</a></p>
+    <br><br><br>
+{% endblock body %}
