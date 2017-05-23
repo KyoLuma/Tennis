@@ -38,6 +38,12 @@ class User extends BaseUser
 
     protected $profile_picture;
 
+    /**
+     * @ORM\Column(type="string")
+     */
+
+    protected $town;
+
 
     /**
      * Set firstName
@@ -109,5 +115,29 @@ class User extends BaseUser
     public function getProfilePicture()
     {
         return $this->profile_picture;
+    }
+
+    /**
+     * Set town
+     *
+     * @param string $town
+     *
+     * @return User
+     */
+    public function setTown($town)
+    {
+        $this->town = $town;
+
+        return $this;
+    }
+
+    /**
+     * Get town
+     *
+     * @return string
+     */
+    public function getTown()
+    {
+        return $this->town;
     }
 }

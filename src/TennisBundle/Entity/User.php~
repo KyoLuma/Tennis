@@ -38,6 +38,12 @@ class User extends BaseUser
 
     protected $profile_picture;
 
+    /**
+     * @ORM\Column(type="string")
+     */
+
+    protected $town;
+
 
     /**
      * Set firstName

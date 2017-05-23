@@ -12,3 +12,7 @@ services:
          class: TennisBundle\Form\RegistrationType
          tags:
              - { name: form.type, alias: app_user_registration }
+     app.form.profile:
+        class: TennisBundle\Form\EditProfilType
+        tags:
+            - { name: form.type, alias: fos_user_profile }
