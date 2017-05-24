@@ -74,6 +74,7 @@ p{
 .left_profil{
     display: flex;
     flex-direction: column;
+    margin-top: -20px;
 }
 .connect{
     background-color: #385623;

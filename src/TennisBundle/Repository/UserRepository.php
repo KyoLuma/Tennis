@@ -10,4 +10,14 @@ namespace TennisBundle\Repository;
  */
 class UserRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function myFindOneById($id){
+        $qb = $this->createQueryBuilder('t');
+        $qb->select('t')
+            ->where('t.id = :id')
+            ->join('t.listuser','l')
+            ->addSelect('l')
+            ->setParameter('id', $id);
+        return $qb->getQuery()->getSingleResult();
+
+    }
 }
