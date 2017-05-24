@@ -1,0 +1,18 @@
+{% extends 'base.html.twig'%}
+{% block body %}
+    <img src="{{ asset('http://fr.cdn.v5.futura-sciences.com/buildsv6/images/largeoriginal/5/5/0/5506733732_85315_physique-balles-tennis.jpg') }}" alt="" class="header_picture">
+    <div class="header_title">Profile</div>
+    <img src="{{ user.ProfilePicture }}" alt="" class="profil_picture">
+    <p>{{ 'Email' }}: {{ user.email }}</p>
+    <p>{{ 'First Name' }}: {{ user.FirstName }} </p>
+    <p>{{ 'Last Name' }}: {{ user.LastName }} </p>
+    <p>{{ 'Gender' }}: {{ user.Gender }} </p>
+    <p>{{ 'Phone Number' }}: {{ user.PhoneNumber }} </p>
+    <p>{{ 'Town' }}: {{ user.Town }} </p>
+    <p>{{ 'Avalabilities' }}: {{ user.Availabilities }} </p>
+    <p>{{ 'Zip code' }}: {{ user.ZipCode }} </p>
+    <p>{{ 'Level' }}: {{ user.Level }} </p>
+    <p>{{ 'Description' }}: {{ user.Description }} </p>
+    <p>{{ 'Favorite tennis player' }}: {{ user.FavoritePlayer }} </p>
+    <p>{{ 'Rating' }}: {{ user.Rating }} </p>
+{% endblock body %}

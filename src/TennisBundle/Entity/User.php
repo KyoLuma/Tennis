@@ -93,6 +93,12 @@ class User extends BaseUser
     protected $phone_number;
 
     /**
+     * @ORM\Column(name="availabilities", type="string", nullable=true)
+     */
+
+    protected $availabilities;
+
+    /**
      * Set firstName
      *
      * @param string $firstName
@@ -379,5 +385,29 @@ class User extends BaseUser
     public function getPhoneNumber()
     {
         return $this->phone_number;
+    }
+
+    /**
+     * Set availabilities
+     *
+     * @param string $availabilities
+     *
+     * @return User
+     */
+    public function setAvailabilities($availabilities)
+    {
+        $this->availabilities = $availabilities;
+
+        return $this;
+    }
+
+    /**
+     * Get availabilities
+     *
+     * @return string
+     */
+    public function getAvailabilities()
+    {
+        return $this->availabilities;
     }
 }

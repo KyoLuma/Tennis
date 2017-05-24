@@ -41,7 +41,7 @@ class DefaultController extends Controller
     public function showAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $user = $em->getRepository('TennisBundle:User')->myFindOneById($id);
+        $user = $em->getRepository('TennisBundle:User')->findOneById($id);
         return $this->render('@FOSUser/Profile/users.html.twig', array(
             'user' => $user
         ));

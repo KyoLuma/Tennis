@@ -1,6 +1,7 @@
 <?php
 namespace TennisBundle\Form;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use TennisBundle\Form;
@@ -16,18 +17,21 @@ class EditProfilType extends AbstractType
             ->add('last_name')
             ->add('gender', ChoiceType::class, array(
                 'choices' => array(
-                    'girl' => 'girl',
-                    'boy' => 'boy'
+                    'female' => 'female',
+                    'male' => 'male'
                 )
             ))
             ->add('phone_number')
             ->add('profile_picture')
             ->add('town')
             ->add('zip_code')
+            ->add('availabilities', CheckboxType::class, array(
+                'required' => false,
+            ))
             ->add('level', ChoiceType::class, array(
                     'choices' => array(
                         'beginner' => 'beginner',
-                        'amateur' => 'amateir',
+                        'amateur' => 'amateur',
                         'intermediate' => 'intermediate',
                         'advanced' => 'advanced',
                         'expert' => 'expert'
