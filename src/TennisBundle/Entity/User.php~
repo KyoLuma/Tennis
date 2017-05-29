@@ -93,10 +93,11 @@ class User extends BaseUser
     protected $phone_number;
 
     /**
-     * @ORM\Column(name="availabilities", type="string", nullable=true)
+     * @ORM\Column(name="availabilities", type="text", nullable=true)
      */
 
     protected $availabilities;
+
 
     /**
      * Set firstName
@@ -386,6 +387,7 @@ class User extends BaseUser
     {
         return $this->phone_number;
     }
+
 
     /**
      * Set availabilities

@@ -28,4 +28,6 @@
     <br><br>
     <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" class="btn"/>
 </form>
-    {% endblock body %}
+    <a href="{{ path('register') }}"><input type="submit" id="_submit" name="_submit" value="{{ 'registration' }}" class="btn"/>
+    </a>
+{% endblock body %}

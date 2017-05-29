@@ -25,7 +25,7 @@ class DefaultController extends Controller
         return $this->render('@FOSUser/Group/show_content.html.twig');
     }
     /**
-     * @Route("/matches", name="matches")
+     * @Route("/", name="matches")
      */
     public function matchesAction()
     {
@@ -45,6 +45,21 @@ class DefaultController extends Controller
         return $this->render('@FOSUser/Profile/users.html.twig', array(
             'user' => $user
         ));
+    }
+    /**
+     * @Route("/register", name="register")
+     */
+    public function registerAction()
+    {
+        return $this->render('@FOSUser/Registration/register_content.html.twig');
+    }
+
+    /**
+     * @Route("/review", name="review")
+     */
+    public function reviewAction()
+    {
+        return $this->render('@Tennis/Default/review.html.twig');
     }
 
 }
