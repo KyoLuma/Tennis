@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <html>
+    <body>
+    <img src="{{ asset('http://fr.cdn.v5.futura-sciences.com/buildsv6/images/largeoriginal/5/5/0/5506733732_85315_physique-balles-tennis.jpg') }}" alt="" class="header_picture">
+    <div class="header_title">Matches</div>
+    <br><br>
+    {% for fosuser in listuser %}
+    <div class="profil_container">
+        <div class="left_profil">
+            <img src="{{ fosuser.profilePicture }}" alt="" class="profil_picture">
+            <div class="div_nickname"><p>{{ fosuser.firstName }}</p></div>
+        </div>
+        <div class="right_profil"><p><b>Location :</b> {{ fosuser.town }}</p>
+            <p><b>Level :</b> {{ fosuser.level }}</p>
+            <p><b>Rating :</b> {{ fosuser.rating }}</p>
+            <div class="connect"><a href="{{ path('showuser', {'id': fosuser.id}) }}"><p>Connect</p></a></div>
+        </div>
+    </div>
+        <br><br>
+    {% endfor %}
+    <br><br><br><br><br><br>
+    </body>
+    </html>
+{% endblock body %}
