@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <html>
+    <body>
+    <img src="{{ asset('http://fr.cdn.v5.futura-sciences.com/buildsv6/images/largeoriginal/5/5/0/5506733732_85315_physique-balles-tennis.jpg') }}" alt="" class="header_picture">
+    <div class="header_title">Invite</div>
+    <br><br>
+    <div class="profil_container">
+        <div class="left_profil">
+            <img src="{{ asset('https://marketplace.canva.com/MAB4Yqx-uWs/1/thumbnail/canva-young-executive-woman-profile-icon--MAB4Yqx-uWs.png') }}" alt="" class="profil_picture">
+            <div class="div_nickname"><p>Charlotte</p></div>
+        </div>
+        <div class="right_profil"><p><b>Location :</b> 77000 Melun</p>
+            <p><b>Level :</b> beginner</p>
+            <p><b>Rating :</b> 4.7 </p>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="review_line1">
+        <span class="accept">Accept</span>
+        <span class="decline">Decline</span>
+    </div>
+    <br><br><br>
+    </body>
+    </html>
+{% endblock %}

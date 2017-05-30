@@ -62,4 +62,34 @@ class DefaultController extends Controller
         return $this->render('@Tennis/Default/review.html.twig');
     }
 
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contactAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $foscontact = $em->getRepository('TennisBundle:User')->findAll();
+        return $this->render('@FOSUser/Profile/contact.html.twig', array(
+            'listcontact' => $foscontact
+        ));
+    }
+    /**
+     * @Route("/contact/{id}/scheduler", name="scheduler")
+     */
+    public function schedulerAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $contact = $em->getRepository('TennisBundle:User')->findOneById($id);
+        return $this->render('@FOSUser/Profile/scheduler.html.twig', array(
+            'contact' => $contact
+        ));
+    }
+
+    /**
+     * @Route("/invite", name="invite")
+     */
+    public function inviteAction()
+    {
+        return $this->render('@Tennis/Default/invite.html.twig');
+    }
 }

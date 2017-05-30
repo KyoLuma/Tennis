@@ -12,12 +12,15 @@
         {% block body %}
         {% endblock %}
         <div class="nav">
-            <a href="{{ path('kjj') }}"><img src="{{ asset('http://www.freeiconspng.com/uploads/am-a-19-year-old-multimedia-artist-student-from-manila--21.png') }}" alt="tyu" class="nav_img nav_img_profil">
+            <a href="{{ path('fos_user_profile_show') }}"><img src="{{ asset('http://www.freeiconspng.com/uploads/am-a-19-year-old-multimedia-artist-student-from-manila--21.png') }}" alt="tyu" class="nav_img nav_img_profil">
             </a>
             <a href="{{ path('matches') }}"><img src="{{ asset('https://img.clipartfest.com/6beace6f73e2384c74ea54e24cdf7f5a_lady-cougar-tennis-team-tennis-team-logo-clipart_600-494.png') }}" alt="" class="nav_img">
             </a>
-            <img src="{{ asset('http://www.freeiconspng.com/uploads/contacts-icon--26.png') }}" alt="" class="nav_img">
-            <img src="{{ asset('https://cdn4.iconfinder.com/data/icons/ios7-essence/22/other_review_comment__-512.png') }}" alt="" class="nav_img">
+            <a href="{{ path('invite') }}"><img src="{{ asset('https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/tennis_racket.png') }}" alt="tyu" class="nav_img">
+            </a>
+            <a href="{{ path('contact') }}"><img src="{{ asset('http://www.freeiconspng.com/uploads/contacts-icon--26.png') }}" alt="" class="nav_img">
+            </a>
+            <a href="{{ path('review') }}"><img src="{{ asset('https://cdn4.iconfinder.com/data/icons/ios7-essence/22/other_review_comment__-512.png') }}" alt="" class="nav_img"></a>
         </div>
         {% block javascripts %}{% endblock %}
     </body>

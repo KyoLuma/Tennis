@@ -43,6 +43,16 @@ p{
     color: black;
     font-family: arial;
 }
+button{
+    margin: 0
+}
+a{
+    text-decoration: none;
+    color: white
+}
+span{
+    font-family: Arial;
+}
 .nav{
     background-color: white;
     border-top: 2px solid #385623;
@@ -79,9 +89,11 @@ p{
 }
 .connect{
     background-color: #385623;
-    width: 80px;
-    height: 25px;
+    padding: 5px;
     text-align: center;
+    width: 120px;
+    font-family: arial;
+    color: white
 }
 .review_picture{
     border-radius: 50%;
@@ -91,5 +103,44 @@ p{
 }
 .review_line1{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.not_ever{
+    background-color: lightpink;
+    padding: 5px;
+    border: 1px solid #385623;
+}
+.not_now{
+    background-color: #ffffa5;
+    padding: 5px;
+    border: 1px solid #385623;
+}
+.number{
+    padding: 10px;
+    border: 1px solid #385623;
+    height: 20px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.skill{
+    padding: 10px 20px;
+    border: 1px solid #385623;
+    height: 20px;
+}
+.accept{
+    background-color: #385623;
+    padding: 10px 20px;
+    border: 1px solid #385623;
+    height: 20px;
+    color: white;
+    margin-left: 20px;
+}
+.decline{
+    background-color: orangered;
+    padding: 10px 20px;
+    border: 1px solid #385623;
+    height: 20px;
+    color: white;
+    margin-right: 20px;
+}
 }

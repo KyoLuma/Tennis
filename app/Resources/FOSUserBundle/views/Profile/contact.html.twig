@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <html>
+        <body>
+            <img src="{{ asset('http://fr.cdn.v5.futura-sciences.com/buildsv6/images/largeoriginal/5/5/0/5506733732_85315_physique-balles-tennis.jpg') }}" alt="" class="header_picture">
+            <div class="header_title">Contacts</div>
+            <br><br>
+            {% for foscontact in listcontact %}
+                <div class="profil_container">
+                    <div class="left_profil">
+                        <img src="{{ foscontact.profilePicture }}" alt="" class="profil_picture">
+                        <div class="div_nickname"><p>{{ foscontact.firstName }}</p></div>
+                    </div>
+                    <div class="right_profil"><p><b>Location :</b> {{ foscontact.town }}</p>
+                        <p><b>Level :</b> {{ foscontact.level }}</p>
+                        <p><b>Rating :</b> {{ foscontact.rating }}</p>
+                        <div class="connect"><a href="{{ path('scheduler', {'id': foscontact.id}) }}">Schedule match</a></div>
+                    </div>
+                </div>
+                <br><br>
+            {% endfor %}
+        </body>
+    </html>
+{% endblock body %}
