@@ -11,6 +11,7 @@
     <body>
         {% block body %}
         {% endblock %}
+        {% block nav %}
         <div class="nav">
             <a href="{{ path('fos_user_profile_show') }}"><img src="{{ asset('http://www.freeiconspng.com/uploads/am-a-19-year-old-multimedia-artist-student-from-manila--21.png') }}" alt="tyu" class="nav_img nav_img_profil">
             </a>
@@ -22,6 +23,7 @@
             </a>
             <a href="{{ path('review') }}"><img src="{{ asset('https://cdn4.iconfinder.com/data/icons/ios7-essence/22/other_review_comment__-512.png') }}" alt="" class="nav_img"></a>
         </div>
+        {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>
